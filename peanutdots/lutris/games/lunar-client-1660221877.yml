@@ -1,0 +1,10 @@
+game:
+  exe: /usr/bin/lunarclient
+linux: {}
+system:
+  disable_compositor: false
+  env:
+    ? ''
+    : ''
+  mangohud: true
+  prefix_command: 'MESA_LOADER_DRIVER_OVERRIDE=zink '

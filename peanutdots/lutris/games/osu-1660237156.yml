@@ -1,0 +1,18 @@
+game:
+  arch: win32
+  exe: /home/peanut/.local/share/osu-wine/osu!/osu!.exe
+  prefix: ~/.local/share/wineprefixes/osu-wineprefix
+  working_dir: /home/peanut/.local/share/osu-wine/osu!
+system:
+  prefix_command: obs-glcapture
+wine:
+  battleye: false
+  d3d_extras: false
+  dxvk: false
+  dxvk_nvapi: false
+  eac: false
+  esync: false
+  fsr: false
+  fsync: false
+  version: wine-osu
+  vkd3d: false
