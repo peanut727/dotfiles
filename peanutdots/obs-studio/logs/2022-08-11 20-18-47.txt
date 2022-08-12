@@ -1,0 +1,89 @@
+20:18:47.143: CPU Name: AMD Ryzen 3 3200G with Radeon Vega Graphics
+20:18:47.143: CPU Speed: 3692.497MHz
+20:18:47.143: Physical Cores: 4, Logical Cores: 4
+20:18:47.143: Physical Memory: 13909MB Total, 1688MB Free
+20:18:47.143: Kernel Version: Linux 5.19.0-xanmod2-2-x64v2
+20:18:47.143: Distribution: "Arch Linux" Unknown
+20:18:47.143: Session Type: x11
+20:18:47.143: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+20:18:47.144: Qt Version: 5.15.5 (runtime), 5.15.5 (compiled)
+20:18:47.144: Portable mode: false
+20:18:47.218: OBS 27.2.4-2 (linux)
+20:18:47.218: ---------------------------------
+20:18:47.218: ---------------------------------
+20:18:47.218: audio settings reset:
+20:18:47.218: 	samples per sec: 48000
+20:18:47.218: 	speakers:        2
+20:18:47.219: ---------------------------------
+20:18:47.219: Initializing OpenGL...
+20:18:47.287: Loading up OpenGL on adapter AMD AMD Radeon Vega 8 Graphics (raven, LLVM 14.0.6, DRM 3.47, 5.19.0-xanmod2-2-x64v2)
+20:18:47.287: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 22.1.5, shading language 4.60
+20:18:47.299: ---------------------------------
+20:18:47.299: video settings reset:
+20:18:47.299: 	base resolution:   1920x1080
+20:18:47.299: 	output resolution: 1280x720
+20:18:47.299: 	downscale filter:  Lanczos
+20:18:47.299: 	fps:               60/1
+20:18:47.299: 	format:            NV12
+20:18:47.299: 	YUV mode:          709/Partial
+20:18:47.299: NV12 texture support not available
+20:18:47.301: Audio monitoring device:
+20:18:47.301: 	name: Default
+20:18:47.301: 	id: default
+20:18:47.301: ---------------------------------
+20:18:47.302: Failed to load 'en-US' text for module: 'decklink-captions.so'
+20:18:47.303: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+20:18:47.304: os_dlopen(/usr//lib/obs-plugins/frontend-tools.so->/usr//lib/obs-plugins/frontend-tools.so): libluajit-5.1.so.2: cannot open shared object file: No such file or directory
+20:18:47.304: 
+20:18:47.304: Module '/usr//lib/obs-plugins/frontend-tools.so' not loaded
+20:18:47.307: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+20:18:47.307: No blackmagic support
+20:18:47.313: v4l2loopback not installed, virtual camera disabled
+20:18:47.316: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+20:18:47.316: 
+20:18:47.316: FFMPEG VAAPI supported
+20:18:47.318: obs-gstreamer build: b6b70cb, gst-runtime: 1.20.3
+20:18:47.329: os_dlopen(/usr//lib/obs-plugins/sndio.so->/usr//lib/obs-plugins/sndio.so): libsndio.so.7: cannot open shared object file: No such file or directory
+20:18:47.329: 
+20:18:47.329: Module '/usr//lib/obs-plugins/sndio.so' not loaded
+20:18:47.330: ---------------------------------
+20:18:47.330:   Loaded Modules:
+20:18:47.330:     text-freetype2.so
+20:18:47.330:     rtmp-services.so
+20:18:47.330:     obs-x264.so
+20:18:47.330:     obs-transitions.so
+20:18:47.330:     obs-outputs.so
+20:18:47.330:     obs-libfdk.so
+20:18:47.330:     obs-gstreamer.so
+20:18:47.330:     obs-filters.so
+20:18:47.330:     obs-ffmpeg.so
+20:18:47.330:     linux-v4l2.so
+20:18:47.330:     linux-pulseaudio.so
+20:18:47.330:     linux-jack.so
+20:18:47.330:     linux-decklink.so
+20:18:47.330:     linux-capture.so
+20:18:47.330:     linux-alsa.so
+20:18:47.330:     image-source.so
+20:18:47.330:     decklink-ouput-ui.so
+20:18:47.330:     decklink-captions.so
+20:18:47.330: ---------------------------------
+20:18:47.330: ==== Startup complete ===============================================
+20:18:47.366: All scene data cleared
+20:18:47.366: ------------------------------------------------
+20:18:47.369: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.56) 15.0.0'
+20:18:47.369: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+20:18:47.369: pulse-input: Started recording from 'alsa_output.pci-0000_06_00.6.analog-stereo.monitor'
+20:18:47.369: [Loaded global audio device]: 'Desktop Audio'
+20:18:47.370: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.56) 15.0.0'
+20:18:47.370: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+20:18:47.370: pulse-input: Started recording from 'alsa_input.pci-0000_06_00.6.analog-stereo'
+20:18:47.370: [Loaded global audio device]: 'Mic/Aux'
+20:18:47.371: xshm-input: Geometry 1920x1080 @ 0,0
+20:18:47.374: Switched to scene 'Scene'
+20:18:47.374: ------------------------------------------------
+20:18:47.374: Loaded scenes:
+20:18:47.374: - scene 'Scene':
+20:18:47.374:     - source: 'Screen Capture (XSHM)' (xshm_input)
+20:18:47.374: ------------------------------------------------
+20:18:47.919: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+20:18:47.919: 
