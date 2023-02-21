@@ -1,0 +1,5 @@
+alias dfpush='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME push -u origin master'
+alias dfcomm='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -m'
+alias dfupdate='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME add -u'
+alias dfstats='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME status'
+alias dfadd='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME add'
