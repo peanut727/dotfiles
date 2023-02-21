@@ -9,6 +9,6 @@
 ```
 
 ---
-# References
+# References | Credits
 - https://github.com/terroo/dotfiles
 - https://github.com/terroo/fonts
