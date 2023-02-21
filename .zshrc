@@ -101,4 +101,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$HOME/.local/bin/:$PATH"
 export PATH="$HOME/.local/bin/:$PATH"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME'
+alias dfpush='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME push -u origin master'
+alias dfcommit='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME commit -m'
+alias dfupdate='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME add -u'
+alias dfstatus='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME status'
+alias dfadd='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME add'
