@@ -27,6 +27,10 @@ Don't forget to download RTKit package(If you don't have it).
 -------------------------------------------------
 Current Quants: 64/48000 balanced preset in terms of latency and cpu load. ( feel free to experiment with these values every hardware is different. )
 ```
+# Mouse Acceleration
+  
+  Just copy the `50-mouse-acceleration.conf` to ``/etc/X11/xorg.conf.d/``
+
 # References | Credits
 ```
 - https://github.com/terroo/dotfiles
