@@ -7,7 +7,7 @@
 ---
 
 
-# Pipewire Tweaks
+# Pipewire tweaks for low latency audio
 
 Make 95-pipewire.conf on this path.
 /etc/security/limits.d/95-pipewire.conf
