@@ -11,16 +11,15 @@
 
 Make 95-pipewire.conf on this path.
 /etc/security/limits.d/95-pipewire.conf
--------------------------------------------------
 ```
 # Limits for users of pipewire
 @pipewire - rtprio 95
 @pipewire - nice -20
 @pipewire - renice -20
 @pipewire - memlock unlimited
--------------------------------------------------
+```
 Create a pipewire group using:
-
+``
 $ groupadd pipewire
 
 Add your user to pipewire group:
