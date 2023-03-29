@@ -25,7 +25,7 @@ $ gpasswd -a user pipewire (replace the user with your username)
 
 Don't forget to download RTKit package(If you don't have it).
 -------------------------------------------------
-Current Quants: 64/48000 balanced preset in terms of latency and cpu load.
+Current Quants: 64/48000 balanced preset in terms of latency and cpu load. ( feel free to experiment with these values every hardware is different. )
 ```
 # References | Credits
 ```
