@@ -1,0 +1,52 @@
+#! /bin/sh
+
+
+nm-applet &
+
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc config border_width         3
+bspc config window_gap           8
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Pavucontrol state=floating
+bspc rule -a Easy Effects state=floating
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a Protonvpn state=floating
+bspc rule -a Lutris state=floating
+bspc rule -a Steam state=floating
+
+bspc rule -a robloxplayerbeta.exe desktop='^4' follow=on focus=on state=floating 
+
+
+## peanut rules
+bspc rule -a Google-chrome desktop='^2' follow=on focus=on
+bspc rule -a discord desktop='^3' follow=on focus=on
+bspc rule -a ArmCord desktop='^3' follow=on focus=on
+
+
+
+#AutoStart
+
+#wmname (
+wmname LG3D
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+picom &
+#feh --bg-fill --randomize Pictures/wp.png #wallpaper
+#$HOME/.config/polybar/launch.sh 
+xrdb ${HOME}/.Xresources
+$HOME/.config/polybar/launch.sh &
+$HOME/.fehbg
+
+# Polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
