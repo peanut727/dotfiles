@@ -19,7 +19,7 @@ Make 95-pipewire.conf on this path.
 @pipewire - memlock unlimited
 ```
 Create a pipewire group using:
-``
+```
 $ groupadd pipewire
 
 Add your user to pipewire group:
@@ -29,8 +29,6 @@ $ gpasswd -a user pipewire
 Don't forget to download RTKit package(If you don't have it).
 -------------------------------------------------
 Current Quants: 64/48000 balanced preset in terms of latency and cpu load.
-
----
 ```
 # References | Credits
 ```
