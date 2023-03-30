@@ -25,7 +25,8 @@ super + alt + x
 
 # terminal emulator
 super + Return
-	alacritty
+        kitty
+
 
 
 # Terminal (floating)
