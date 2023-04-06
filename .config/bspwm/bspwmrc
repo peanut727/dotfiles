@@ -21,32 +21,29 @@ bspc rule -a Easy Effects state=floating
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+##PEANUT RULES
 bspc rule -a Protonvpn state=floating
 bspc rule -a Lutris state=floating
 bspc rule -a Steam state=floating
-
 bspc rule -a robloxplayerbeta.exe desktop='^4' follow=on focus=on state=floating 
-
-
-## peanut rules
 bspc rule -a Google-chrome desktop='^2' follow=on focus=on
 bspc rule -a discord desktop='^3' follow=on focus=on
 bspc rule -a ArmCord desktop='^3' follow=on focus=on
 
 
 
+
 #AutoStart
-
-#wmname (
-wmname LG3D
+wmname LG3D 
 export _JAVA_AWT_WM_NONREPARENTING=1
-
 picom &
-#feh --bg-fill --randomize Pictures/wp.png #wallpaper
-#$HOME/.config/polybar/launch.sh 
 xrdb ${HOME}/.Xresources
 $HOME/.config/polybar/launch.sh &
 $HOME/.fehbg
+
+#Refresh Rate
+$HOME/70hz.sh
 
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
