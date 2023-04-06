@@ -25,7 +25,7 @@ super + alt + x
 
 # terminal emulator
 super + Return
-        kitty
+        alacritty
 
 
 
