@@ -27,3 +27,4 @@ alias dfstatus='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME status
 alias dfadd='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME add'
 alias dfpush='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME push'
 alias grubrefresh='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias vim='nvim'
