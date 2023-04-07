@@ -59,6 +59,7 @@ tooltip {
 #network,
 #workspaces,
 #tray,
+#memory
 #backlight {
     background: #1e1e2e;
     padding: 0px 10px;
@@ -95,6 +96,8 @@ tooltip {
 
 #custom-updates {
     color: #f5c2e7;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-left: 0px;
     border-right: 0px;
 }
@@ -117,6 +120,18 @@ tooltip {
     border-left: 0px;
     border-right: 0px;
 }
+
+#memory {
+    background: #1e1e2e;
+    color: #90ee90;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
 
 #pulseaudio {
     color: #89b4fa;

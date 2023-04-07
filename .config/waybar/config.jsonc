@@ -64,7 +64,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{: %R   %d/%m}",
+        "format": "{: %R   %m/%d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "backlight": {
@@ -89,7 +89,7 @@
     },
     "memory": {
     "interval": 30,
-    "format": "{total}GiB ",
+    "format": "{used}GiB",
     "max-length": 10
     },
     "pulseaudio": {
