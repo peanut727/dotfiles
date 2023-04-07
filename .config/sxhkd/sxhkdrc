@@ -25,7 +25,7 @@ super + alt + x
 
 # terminal emulator
 super + Return
-        alacritty
+        kitty
 
 
 
@@ -35,9 +35,10 @@ super + Return
 
 
 
-# program launcher
+# floating
 super + space
-        rofi -show
+        bspc node -t {floating,tiled}
+        
 
 # program launcher (Apps)
 super + d
