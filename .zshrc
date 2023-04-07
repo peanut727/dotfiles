@@ -20,11 +20,19 @@ unsetopt correct_all
 #aliases
 alias osumv= "mv ~/Downloads/*.osz /hdd/osu\!/Songs"
 alias vim="nvim"
+
+## dotfile management
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias dfcommit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -m'
 alias dfupdate='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME add -u'
 alias dfstatus='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME status'
 alias dfadd='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME add'
 alias dfpush='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME push'
+
+
+
 alias grubrefresh='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias vim='nvim'
+
+
+alias pvpn='protonvpn-cli'
