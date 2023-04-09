@@ -34,5 +34,6 @@ alias dfpush='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME push'
 alias grubrefresh='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias vim='nvim'
 
-
+##peanut aliases
 alias pvpn='protonvpn-cli'
+alias winege='$HOME/.local/share/lutris/runners/wine/lutris-GE-Proton7-42-x86_64/bin/wine'
