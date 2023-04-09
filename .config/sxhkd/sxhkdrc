@@ -23,17 +23,13 @@ super + alt + x
     /usr/bin/flameshot gui
 
 
+# Thunar
+super + e
+    thunar
+
 # terminal emulator
 super + Return
         kitty
-
-
-
-# Terminal (floating)
-#super + shift + Return
-       # kitty --float
-
-
 
 # floating
 super + space
