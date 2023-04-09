@@ -30,7 +30,7 @@ bspc rule -a robloxplayerbeta.exe desktop='^4' follow=on focus=on state=floating
 bspc rule -a Google-chrome desktop='^2' follow=on focus=on
 bspc rule -a discord desktop='^3' follow=on focus=on
 bspc rule -a ArmCord desktop='^3' follow=on focus=on
-
+bspc rule -a vibrantLinux desktop='^1' follow=on focus=on state=floating
 
 
 
@@ -41,7 +41,7 @@ picom &
 xrdb ${HOME}/.Xresources
 $HOME/.config/polybar/launch.sh &
 $HOME/.fehbg
-
+vibrantLinux &
 
 #Refresh Rate
 $HOME/70hz.sh &
