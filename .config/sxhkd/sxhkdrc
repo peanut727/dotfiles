@@ -9,6 +9,13 @@ super + ctrl + alt + r
         reboot
 
 
+##PICOM
+
+alt + shift + F11
+      picom &
+
+
+
 # Google
 super + shift + s
       google-chrome-stable --enable-features=VaapiVideoDecoder,VaapiVideoEncoder
