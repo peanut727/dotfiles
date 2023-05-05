@@ -18,7 +18,7 @@ alt + shift + F11
 
 # Google
 super + shift + s
-      google-chrome-stable --enable-features=VaapiVideoDecoder,VaapiVideoEncoder
+      thorium-browser
 
 
 # kill picom
