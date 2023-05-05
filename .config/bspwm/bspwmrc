@@ -39,16 +39,19 @@ bspc rule -a Steam desktop='^4' follow=no
 
 
 #AutoStart
+
+xfce4-power-manager &
+
 wmname LG3D 
 export _JAVA_AWT_WM_NONREPARENTING=1
 picom &
 xrdb ${HOME}/.Xresources
 $HOME/.config/polybar/launch.sh &
 $HOME/.fehbg
-vibrantLinux &
+vibrant-cli DVI-D-0 1.25 &
 
 #Refresh Rate
 $HOME/70hz.sh &
-
+$HOME/1600x900.sh &
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
