@@ -18,7 +18,7 @@ unsetopt correct_all
 
 
 #aliases
-alias osumv= "mv ~/Downloads/*.osz /hdd/osu\!/Songs"
+alias osumv="mv ~/Downloads/*.osz /hdd2/osu\!/Songs"
 alias vim="nvim"
 
 ## dotfile management
