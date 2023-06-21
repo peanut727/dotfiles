@@ -36,7 +36,7 @@ super + e
 
 # terminal emulator
 super + Return
-        kitty
+        alacritty
 
 # floating
 super + space
