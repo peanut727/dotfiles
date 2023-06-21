@@ -7,7 +7,7 @@
 ---
 
 # Installing Dotfiles
-```
+```bash
 echo ".cfg" >> ~/.gitignore
 git clone --bare https://github.com/peanut727/dotfiles.git $HOME/.cfg
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
