@@ -33,7 +33,8 @@ for package in "${packages[@]}"; do
 done
 
 mv -v 50-mouse-acceleration.conf /etc/X11/xorg.conf.d/
-echo "Flat acceleration profile applied."
+mv -v 10-monitor.conf /etc/X11/xorg.conf.d/
+echo "Flat acceleration profile and 70hz refresh rate applied."
 echo "Package installation complete."
 
 
