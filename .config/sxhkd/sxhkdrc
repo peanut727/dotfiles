@@ -2,19 +2,13 @@
 # wm independent hotkeys
 #
 
-
 ##reboot
-
 super + ctrl + alt + r
         reboot
 
-
 ##PICOM
-
 alt + shift + F11
       picom &
-
-
 
 # Google
 super + shift + s
@@ -25,12 +19,12 @@ super + shift + s
 alt + shift + F12
       pkill picom
 
-# flameshot
+# flameshot (Screenshot Tool)
 super + alt + x
     /usr/bin/flameshot gui
 
 
-# Thunar
+# Thunar (File Manager)
 super + e
     thunar
 
