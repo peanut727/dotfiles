@@ -1,50 +1,54 @@
 #! /bin/sh
 
-
-nm-applet &
-
-
+## BSPWM configs
 pgrep -x sxhkd > /dev/null || sxhkd &
-
 bspc monitor -d I II III IV V VI VII VIII IX X
-
 bspc config border_width         3
 bspc config window_gap           8
-
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+
+## Rules
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Pavucontrol state=floating
 bspc rule -a Easy Effects state=floating
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-
-##PEANUT RULES
 bspc rule -a Protonvpn state=floating
-bspc rule -a Lutris state=floating
-bspc rule -a Steam state=floating
-bspc rule -a robloxplayerbeta.exe desktop='^4' follow=on focus=on state=floating 
-bspc rule -a Google-chrome desktop='^2' follow=on focus=on
+bspc rule -a Lutris state=floating 
+bspc rule -a Thorium-browser desktop='^2' follow=on focus=on
 bspc rule -a discord desktop='^3' follow=on focus=on
-bspc rule -a ArmCord desktop='^3' follow=on focus=on
 bspc rule -a vibrantLinux desktop='^1' follow=no state=floating
-bspc rule -a Steam desktop='^4' follow=no
+bspc rule -a android-studio state=floating border=off follow=on
+bspc rule -a Connman-gtk state=floating border=off
+
+#AutoStart Functions
+
+  function run_applets() {
+  applets=(picom flameshot)
+
+  for applet in "${applets[@]}"
+
+  do
+    $applet &
+  done
+}
+  function connman() { # this is needed since connman-gtk works like an application. If you kill it process gets killed.
+    while true; do
+      if ! pgrep -x "connman-gtk" > /dev/null; then
+        connman-gtk &
+      fi
+      sleep 5
+  done
+  }
+connman
 
 
-
-
-
-
-#AutoStart
-
-xfce4-power-manager &
-
-wmname LG3D 
+## Env Variables needed for java applications to work properly
+wmname LG3D &
 export _JAVA_AWT_WM_NONREPARENTING=1
-picom &
+
+## zzz
 xrdb ${HOME}/.Xresources
 $HOME/.config/polybar/launch.sh &
 $HOME/.fehbg
@@ -53,5 +57,8 @@ vibrant-cli DVI-D-0 1.25 &
 #Refresh Rate
 $HOME/70hz.sh &
 $HOME/1600x900.sh &
+
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+run_applets
