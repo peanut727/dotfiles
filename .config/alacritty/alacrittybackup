@@ -2,12 +2,6 @@ env:
   TERM: xterm-256color
   WINIT_X11_SCALE_FACTOR: "1"
 
-import:
-  # uncomment the flavour you want below:
-  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
-#  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
-#  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
-#  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
 window:
   dimensions:
     columns: 100
@@ -23,7 +17,7 @@ window:
   title: Alacritty@CachyOS
 
   # Opacity
-  opacity: 0.9
+  opacity: 0.7
 
   # Window class (Linux/BSD only):
   class:
@@ -75,7 +69,32 @@ scrolling:
 #    cyan:    '#5fb3b3'
 #    white:   '#d8dee9'
 
+# Colors (Nord)
+colors:
+  # Default colors
+  primary:
+    background: '#f5e0dc'
+    foreground: '#634b4b'
+normal:
+  black:   '#343d46'
+  red:     '#EC5f67'
+  green:   '#99C794'
+  yellow:  '#FAC863'
+  blue:    '#6699cc'
+  magenta: '#c594c5'
+  cyan:    '#5fb3b3'
+  white:   '#634b4b'
 
+
+bright:
+  black:   '#343d46'
+  red:     '#EC5f67'
+  green:   '#99C794'
+  yellow:  '#FAC863'
+  blue:    '#6699cc'
+  magenta: '#c594c5'
+  cyan:    '#5fb3b3'
+  white:   '#634b4b'
 
 # Font configuration
 font:
