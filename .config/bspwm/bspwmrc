@@ -21,27 +21,30 @@ bspc rule -a discord desktop='^3' follow=on focus=on
 bspc rule -a vibrantLinux desktop='^1' follow=no state=floating
 bspc rule -a android-studio state=floating border=off follow=on
 bspc rule -a Connman-gtk state=floating border=off
+bspc rule -a steam desktop='^4' state=floating 
 
 #AutoStart Functions
-
-  function run_applets() {
+function run_applets() {
   applets=(picom flameshot)
 
   for applet in "${applets[@]}"
-
   do
     $applet &
   done
 }
-  function connman() { # this is needed since connman-gtk works like an application. If you kill it process gets killed.
-    while true; do
-      if ! pgrep -x "connman-gtk" > /dev/null; then
-        connman-gtk &
-      fi
-      sleep 5
+run_applets
+
+function connman() {
+  while true; do
+    if ! pidof "connman-gtk" > /dev/null; then
+      connman-gtk &
+    fi
+    sleep 5
   done
-  }
-connman
+}
+connman &
+
+
 
 
 ## Env Variables needed for java applications to work properly
@@ -56,9 +59,7 @@ vibrant-cli DVI-D-0 1.25 &
 
 #Refresh Rate
 $HOME/70hz.sh &
-$HOME/1600x900.sh &
 
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-run_applets
