@@ -38,8 +38,8 @@ super + space
         
 
 # program launcher (Apps)
-super + d
-        rofi -show drun -icon-theme "Tela-circle" -show-icons
+super + {d,r,p}
+	sh $HOME/.config/rofi/bin/{launcher,runner,powermenu}
 
 
 # make sxhkd reload its configuration files:
