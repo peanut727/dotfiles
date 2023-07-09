@@ -30,7 +30,7 @@ super + e
 
 # terminal emulator
 super + Return
-        alacritty
+        kitty
 
 # floating
 super + space
