@@ -6,6 +6,17 @@
 
 ---
 
+![alt text](https://github.com/peanut727/dotfiles/blob/master/image.png?raw=true)
+
+
+
+
+
+
+
+
+
+
 # Installing Dotfiles
 ```bash
 echo ".cfg" >> ~/.gitignore
