@@ -20,7 +20,7 @@ include-file = $HOME/.config/polybar/colors.ini
 
 [colors]
 background = ${colors.base}
-foreground = ${colors.transparent}
+foreground = ${colors.rosewater}
 
 dark-light = #272A2B 
 active-light = #313435
@@ -130,7 +130,7 @@ label-focused-padding = 2
 label-focused-background =  ${colors.mantle}
 label-focused-margin = 0
 
-label-occupied = %icon% 
+label-occupied =  %icon%
 label-occupied-foreground = #FFFFFF
 label-occupied-background = ${colors.crust}
 label-occupied-padding = 1
