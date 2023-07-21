@@ -8,7 +8,7 @@
     "margin-right": 0,
     "modules-left": ["wlr/workspaces", "custom/playerctl", "custom/playerlabel"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "pulseaudio#microphone", "cpu", "memory","clock", "tray"],
+    "modules-right": ["pulseaudio", "pulseaudio#microphone","custom/empty-space", "cpu", "memory","clock", "tray"],
     // Modules configuration
 	"clock": {
 		"format": " {:%H:%M}",
@@ -150,6 +150,10 @@
 		"exec-if": "pgrep 'wf-recorder'",
 		"on-click": "exec ./scripts/wlrecord.sh",
 		"signal": 8
+	},
+
+	"custom/empty-space":{
+	  "format": " ",
 	},
 
   "custom/hyprpicker": {
