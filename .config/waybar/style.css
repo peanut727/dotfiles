@@ -2,32 +2,35 @@
     border: none;
     border-radius: 0px;
     /*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/
-    font-family: Iosevka, FontAwesome, Noto Sans CJK;
-    font-size: 14.5px;
+    font-family: Iosevka, FontAwesome, Noto Sans CJK JP Bold;
+    font-size: 15px;
     font-style: normal;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(30, 30, 46, 0.5);
+    background: rgba(30, 30, 46, 0.90);
+    border: none;
     /*background: rgba(30, 30, 46, 0.75);*/
     /*border-bottom: 1px solid #282828;*/
     color: #f4d9e1
 }
 
 #workspaces {
-	background: #282828;
+	background: rgba(30, 30, 46, 0.95);
 	margin: 5px 5px 5px 5px;
-  padding: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
 	border-radius: 16px;
-  border: solid 0px #f4d9e1;
-  font-weight: normal;
-  font-style: normal;
+    border: solid 1px #f4d9e1;
+    font-weight: normal;
+    font-style: normal;
 }
 #workspaces button {
     padding: 0px 5px;
     border-radius: 16px;
-    color: #928374;
+    font-style: normal;
+    color: #f4d9e1;
+
 }
 
 #workspaces button.active {
@@ -66,17 +69,19 @@ window#waybar {
 }
 
 #tray {
-    background: #282828;
+    background: rgba(30, 30, 46, 0.95);
     margin: 5px 5px 5px 5px;
     border-radius: 16px;
+    border: solid 1px #f4d9e1;
     padding: 0px 5px
     /*border-right: solid 1px #282738;*/
 }
 
 #clock {
     color: #f4d9e1;
-    background-color: #282828;
+    background: rgba(30, 30, 46, 0.95);
     margin: 5px 5px 5px 5px;
+    border: solid 1px #f4d9e1;
     border-radius: 16px;
     padding: 0px 5px;
     /*border-right: solid 1px #282738;*/
@@ -101,10 +106,11 @@ window#waybar {
 
 #pulseaudio {
     color: #f4d9e1;
-    background-color: #282828;
+    background: rgba(30, 30, 46, 0.95);
     border-radius: 10px 0px 0px 10px;
     border-left: 0px;
     border-right: 0px;
+    border: solid 1px #f4d9e1;
     padding: 0px 10px 0px 10px;
     margin: 5px 0px 5px 0px;
     
@@ -151,18 +157,19 @@ window#waybar {
 }
 
 #custom-playerctl {
-	background: #282828;
+	background: #11111b;
 	padding-left: 15px;
-  padding-right: 14px;
+    padding-right: 14px;
 	border-radius: 16px;
+	border: solid 1px #f4d9e1;
   /*border-left: solid 1px #282738;*/
   /*border-right: solid 1px #282738;*/
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0px;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
 }
 
 #custom-playerlabel {
@@ -179,10 +186,11 @@ window#waybar {
 }
 
 #window {
-    background: #282828;
+    background: rgba(30, 30, 46, 0.95);
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 16px;
+    border: solid 1px #f4d9e1;
     /*border-left: solid 1px #282738;*/
     /*border-right: solid 1px #282738;*/
     margin-top: 5px;
@@ -198,9 +206,10 @@ window#waybar {
 }
 
 #cpu {
-    background-color: #282828;
+    background: rgba(30, 30, 46, 0.95);
     border-radius: 16px;
     border-right: 40px;
+    border: solid 1px #f4d9e1;
     margin: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -208,9 +217,10 @@ window#waybar {
 }
 
 #memory {
-    background-color: #282828;
+    background: rgba(30, 30, 46, 0.95);
     /*color: #83A598;*/
     border-radius: 16px;
+    border: solid 1px #f4d9e1;
     margin: 5px;
     margin-left: 5px;
     margin-right: 5px;
