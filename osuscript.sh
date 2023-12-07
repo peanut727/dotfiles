@@ -11,6 +11,11 @@ while true; do
             
             mv "$DL/$file" "$SONGS/$file"
             echo "Moved $file to $SONGS"
+
+           # sleep 5
+           # xdotool key F5
+
+
         fi
     done
 done
