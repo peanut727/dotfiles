@@ -52,7 +52,7 @@ function run_applets() {
 }
 run_applets
 
-easyeffects --gapplication-service &
+##easyeffects --gapplication-service &
 
 
 ## Env Variables needed for java applications to work properly
