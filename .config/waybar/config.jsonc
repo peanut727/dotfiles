@@ -8,7 +8,7 @@
     "margin-right": 0,
     "modules-left": ["hyprland/workspaces", "custom/playerctl", "custom/playerlabel"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "pulseaudio#microphone","custom/empty-space", "cpu", "memory","clock", "tray"],
+    "modules-right": ["pulseaudio", "pulseaudio#microphone","custom/empty-space", "cpu","custom/temp", "memory","clock", "tray"],
     // Modules configuration
 	"clock": {
 		"format": " {:%H:%M}",
@@ -40,7 +40,7 @@
     "sort-by-number": true
     },
 
-    	"persistent_workspaces": {
+    	"persistent-workspaces": {
 			  "1": [],
 			  "2": [],
 			  "3": [],
@@ -164,6 +164,12 @@
 
 	"custom/empty-space":{
 	  "format": " ",
+	},
+
+	"custom/temp":{
+	  "exec": "/home/peanut/.config/polybar/scripts/temp.sh",
+	  "format": " {}",
+	  "interval": "1",
 	},
 
   "custom/hyprpicker": {
