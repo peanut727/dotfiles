@@ -23,6 +23,7 @@ bspc rule -a Protonvpn state=floating
 bspc rule -a Lutris state=floating 
 bspc rule -a Thorium-browser desktop='^2' follow=on focus=on
 bspc rule -a discord desktop='^3' follow=on focus=on
+bspc rule -a VencordDesktop desktop='^3' follow=on focus=on
 bspc rule -a vibrantLinux desktop='^1' follow=no state=floating
 bspc rule -a android-studio state=floating border=off follow=on
 bspc rule -a Connman-gtk state=floating border=off
