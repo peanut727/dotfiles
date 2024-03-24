@@ -29,7 +29,7 @@ bspc rule -a android-studio state=floating border=off follow=on
 bspc rule -a Connman-gtk state=floating border=off
 bspc rule -a steam desktop='^4' state=floating 
 bspc rule -a heroic desktop='^4' state=floating
-
+bspc rule -a qBittorrent desktop='^1'
 ## Env Variables
 export EDITOR=nvim
 export VISUAL=nvim
