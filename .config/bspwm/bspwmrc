@@ -35,6 +35,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 export BROWSER=Thorium-browser
 export TERMCMD=kitty
+export QT_QPA_PLATFORMTHEME=qt6ct
 
 
 
@@ -67,7 +68,7 @@ $HOME/.fehbg
 vibrant-cli DVI-D-0 1.25 &
 
 #Refresh Rate
-$HOME/70hz.sh &
+xrandr --rate 70
 
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
