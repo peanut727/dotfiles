@@ -6,9 +6,9 @@
     "margin-bottom": 0,
     "margin-left": 0,
     "margin-right": 0,
-    "modules-left": ["hyprland/workspaces", "custom/playerctl", "custom/playerlabel"],
+    "modules-left": ["custom/logo","hyprland/workspaces", "custom/playerctl", "custom/playerlabel"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "pulseaudio#microphone","custom/empty-space", "cpu","custom/temp", "memory","clock", "tray"],
+    "modules-right": ["pulseaudio", "pulseaudio#microphone","custom/empty-space","custom/temp", "memory","clock", "tray"],
     // Modules configuration
 	"clock": {
 		"format": " {:%H:%M}",
@@ -30,26 +30,17 @@
 			"1": " 一 ",
 			"2": " 二 ",
 			"3": " 三 ",
-			"4": " 四 ",
+			"4": " 八 ",
 			"5": " 五 ",
 			"6": " 七 ",
 			"7": " 八 ",
+			"8": " 8 ",
 			"urgent": "",
-			"active": "ﰊ",
 			"default": "󰧞",
-    "sort-by-number": true
+    "sort-by-number": false
     },
+  },
 
-    	"persistent-workspaces": {
-			  "1": [],
-			  "2": [],
-			  "3": [],
-			  "4": [],
-			  "5": [],
-			  "6": [],
-			  "7": [],
-			},
-},
 
     "custom/playerctl": {
       "format": "{icon}",
@@ -64,6 +55,12 @@
         "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭</span>"
       },
     },
+
+    "custom/logo": {
+     "format": "ﴂ",
+     "tooltip": false
+    },
+
 
     "custom/playerlabel": {
       "format": "<span>{}</span>",
@@ -111,8 +108,8 @@
 	},
 
 	"tray": {
-		"icon-size": 16,
-		"spacing": 5
+		"show-passive-items": true,
+		"spacing": 10
 	},
 
 	"backlight": {

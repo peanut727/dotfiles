@@ -34,9 +34,12 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: #f4d9e1;
-    background-color: transparent;
-    border-radius: 16px;
+  color: #000;
+  background: #E6B9C6;
+  border-radius: 16px;
+  min-width: 35px;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 #workspaces button:hover {
@@ -85,6 +88,11 @@ window#waybar {
     border-radius: 16px;
     padding: 0px 5px;
     /*border-right: solid 1px #282738;*/
+}
+
+#custom-logo {
+    padding: 0px 10px;
+    font-size: 20px;
 }
 
 
