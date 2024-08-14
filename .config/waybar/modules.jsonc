@@ -1,0 +1,146 @@
+{
+  "hyprland/window": {
+    "format": "󰣆 {title}",
+    "max-length": 80,
+    "separate-outputs": false,
+    "rewrite": {
+      "^.*~$": "󰄛 Kitty",
+      "(.*) ": " Empty"
+    },
+  },
+  "group/info": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false,
+    },
+    "modules": ["custom/arrow-right", "cpu", "memory"],
+  },
+  "custom/arrow-right": {
+    "format": "󰁙",
+    "tooltip": false,
+  },
+  "cpu": {
+    "format": "󰘚 {usage}󱉸",
+  },
+  "memory": {
+    "format": " {:2}󱉸",
+  },
+  "disk": {
+    "interval": 600,
+    "format": "󰆼 {percentage_used}󱉸",
+    "path": "/",
+  },
+
+  "custom/playerlabel": {
+    "format": "<span>{}</span>",
+    "return-type": "json",
+    "max-length": 48,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+  },
+
+  /* USE THIS IF YOU WANT ICONS INSTEAD OF NUMBERS
+    "hyprland/workspaces": {
+    "format": "{icon}",
+    "active-only": true,
+    "on-click": "activate",
+    "all-outputs": true,
+    "format-icons": {
+      "1": "",
+      "2": "󰖟",
+      "3": "󰅩",
+      "4": "󰞶",
+      "5": "",
+      "6": "󰓇",
+      "7": "",
+      "8": "󰕧",
+      "9": "",
+      "10": "󰙯",
+    },
+  },*/
+
+"hyprland/workspaces": {
+    "format": "{icon}",
+    "active-only": false,
+    "on-click": "activate",
+    "all-outputs": true,
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
+    },
+  },
+"group/audio": {
+  "orientation": "inherit",
+  "drawer": {
+    "transition-duration": 300,
+    "transition-left-to-right": true,
+  },
+  "modules": ["custom/audio-icon", "pulseaudio", "pulseaudio#microphone"]
+},
+
+"custom/audio-icon": {
+  "format": "󱄠",
+  "tooltip": false,
+},
+  "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+
+   "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+
+  "group/hub": {
+    "orientation": "inherit",
+    "modules": ["clock", "tray"],
+  },
+  "tray": {
+		"show-passive-items": true,
+		"spacing": 10
+	},
+  "clock": {
+    "format": "{:%OI:%M}",
+    "format-alt": "{:%A %d.%m}",
+    "tooltip-format": "<tt><big>{calendar}</big></tt>",
+    "calendar": {
+      "mode": "month",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+      },
+    },
+  }
+}
