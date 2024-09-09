@@ -2,7 +2,7 @@
 
 |Distro|WM|Bar|Compositor|Terminal|Shell|Package Manager|
 |------|------|------|------|------|------|------|
-|[CachyOS](https://cachyos.org/)|[BSPWM](https://github.com/baskerville/bspwm)|[Polybar](https://github.com/polybar/polybar)|[Picom](https://github.com/Arian8j2/picom)|[Kitty](https://github.com/kovidgoyal/kitty)|[Zsh](https://github.com/zsh-users/zsh)|[Paru](https://github.com/Morganamilo/paru)|
+|[CachyOS](https://cachyos.org/)|[Hyprland](https://github.com/hyprwm/Hyprland)|[Waybar](https://github.com/Alexays/Waybar)|[Wayland]()|[Kitty](https://github.com/kovidgoyal/kitty)|[Zsh](https://github.com/zsh-users/zsh)|[Paru](https://github.com/Morganamilo/paru)|
 
 ---
 
