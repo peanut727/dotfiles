@@ -3,7 +3,7 @@
 @define-color main-color @color13;
 
 * {
-  font: bold 16px "JetBrainsMono Nerd Font Propo";
+  font: bold 15px "JetBrainsMono Nerd Font";
   border: none;
   border-radius: 0px;
   box-shadow: none;

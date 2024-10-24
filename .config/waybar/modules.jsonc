@@ -6,60 +6,38 @@
     "rewrite": {
       "^.*~$": "󰄛 Kitty",
       "(.*) ": " Empty"
-    },
+    }
   },
   "group/info": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "transition-left-to-right": false,
+      "transition-left-to-right": false
     },
-    "modules": ["custom/arrow-right", "cpu", "memory"],
+    "modules": ["custom/arrow-right", "cpu", "memory"]
   },
   "custom/arrow-right": {
     "format": "󰁙",
-    "tooltip": false,
+    "tooltip": false
   },
   "cpu": {
-    "format": "󰘚 {usage}󱉸",
+    "format": "󰘚 {usage}󱉸"
   },
   "memory": {
-    "format": " {:2}󱉸",
+    "format": " {:2}󱉸"
   },
   "disk": {
     "interval": 600,
     "format": "󰆼 {percentage_used}󱉸",
-    "path": "/",
+    "path": "/"
   },
-
   "custom/playerlabel": {
     "format": "<span>{}</span>",
     "return-type": "json",
     "max-length": 48,
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F"
   },
-
-  /* USE THIS IF YOU WANT ICONS INSTEAD OF NUMBERS
-    "hyprland/workspaces": {
-    "format": "{icon}",
-    "active-only": true,
-    "on-click": "activate",
-    "all-outputs": true,
-    "format-icons": {
-      "1": "",
-      "2": "󰖟",
-      "3": "󰅩",
-      "4": "󰞶",
-      "5": "",
-      "6": "󰓇",
-      "7": "",
-      "8": "󰕧",
-      "9": "",
-      "10": "󰙯",
-    },
-  },*/
-
-"hyprland/workspaces": {
+  "hyprland/workspaces": {
     "format": "{icon}",
     "active-only": false,
     "on-click": "activate",
@@ -74,59 +52,56 @@
       "7": "7",
       "8": "8",
       "9": "9",
-      "10": "10",
+      "10": "10"
+    }
+  },
+  "group/audio": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": true
     },
+    "modules": ["custom/audio-icon", "pulseaudio", "pulseaudio#microphone"]
   },
-"group/audio": {
-  "orientation": "inherit",
-  "drawer": {
-    "transition-duration": 300,
-    "transition-left-to-right": true,
+  "custom/audio-icon": {
+    "format": "󱄠",
+    "tooltip": false
   },
-  "modules": ["custom/audio-icon", "pulseaudio", "pulseaudio#microphone"]
-},
-
-"custom/audio-icon": {
-  "format": "󱄠",
-  "tooltip": false,
-},
   "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "tooltip": false,
-        "format-muted": " Muted",
-        "on-click": "pamixer -t",
-        "on-scroll-up": "pamixer -i 5",
-        "on-scroll-down": "pamixer -d 5",
-        "scroll-step": 5,
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        }
-    },
-
-   "pulseaudio#microphone": {
-        "format": "{format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": " Muted",
-        "on-click": "pamixer --default-source -t",
-        "on-scroll-up": "pamixer --default-source -i 5",
-        "on-scroll-down": "pamixer --default-source -d 5",
-        "scroll-step": 5
-    },
-
+    "format": "{icon} {volume}%",
+    "tooltip": false,
+    "format-muted": " Muted",
+    "on-click": "pamixer -t",
+    "on-scroll-up": "pamixer -i 5",
+    "on-scroll-down": "pamixer -d 5",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    }
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " Muted",
+    "on-click": "pamixer --default-source -t",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "scroll-step": 5
+  },
   "group/hub": {
     "orientation": "inherit",
-    "modules": ["clock", "tray"],
+    "modules": ["clock", "tray", "custom/notifications"]
   },
   "tray": {
-		"show-passive-items": true,
-		"spacing": 10
-	},
+    "show-passive-items": true,
+    "spacing": 10
+  },
   "clock": {
     "format": "{:%OI:%M}",
     "format-alt": "{:%A %d.%m}",
@@ -139,8 +114,29 @@
         "days": "<span color='#ecc6d9'><b>{}</b></span>",
         "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
-      },
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+  "custom/notifications": {
+    "tooltip": false,
+    "format": "{icon} {}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂚",
+      "dnd-notification": "󰂛",
+      "dnd-none": "󰂛",
+      "inhibited-notification": "󰂚",
+      "inhibited-none": "󰂚",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰂛"
     },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
   }
 }
+
