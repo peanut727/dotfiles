@@ -137,7 +137,6 @@ tooltip label {
   margin: 0px 4px;
 }
 
-#custom-notifications,
 #custom-weather,
 #custom-theme-switcher {
   padding: 0px 8px;
@@ -162,5 +161,12 @@ tooltip label {
 }
 
 #battery {
+  padding: 0px 8px;
+}
+
+#custom-notifications {
+  background: alpha(@background, 0.3);
+  border-radius: 10px;
+  color: lighter(@main-color);
   padding: 0px 8px;
 }
