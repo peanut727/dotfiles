@@ -58,9 +58,7 @@ tooltip label {
 }
 
 
-#cpu,
-#memory,
-#disk,
+
 #custom-updates {
   padding: 0px 6px;
   margin: 8px 4px;
@@ -145,6 +143,26 @@ tooltip label {
   background: alpha(darker(@main-color), 0.3);
   border-radius: 10px;
 }
+#cpu,
+#temperature,
+#memory {
+  padding: 0px 8px;
+  margin: 4px 0px 4px 0px;
+  background: alpha(@background, 0);
+  border-radius: 0px;
+  color: lighter(@main-color);
+}
+
+#temperature.critical {
+  color: #EE4b2b;
+}
+
+#info {
+  padding: 0px 8px;
+  margin: 4px 2px 4px 4px;
+  background: alpha(@background, 0.3);
+  border-radius: 10px;
+}
 
 #clock {
   padding: 0px 8px;
@@ -167,6 +185,7 @@ tooltip label {
 #custom-notifications {
   background: alpha(@background, 0.3);
   border-radius: 10px;
+  margin: 4px 2px 4px 2px;
   color: lighter(@main-color);
   padding: 0px 8px;
 }

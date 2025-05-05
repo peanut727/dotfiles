@@ -1,0 +1,114 @@
+[2025-05-04 00:54:26.049] [info] Using configuration file /home/peanut/.config/waybar/config.jsonc
+[2025-05-04 00:54:26.049] [info] Including resource file: ~/.config/waybar/modules.jsonc
+[2025-05-04 00:54:26.050] [info] Discovered appearance 'dark'
+[2025-05-04 00:54:26.050] [info] Using CSS file /home/peanut/.config/waybar/style.css
+[2025-05-04 00:54:26.053] [info] Hyprland IPC starting
+[2025-05-04 00:54:26.056] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-04 00:54:26.176] [info] Bar configured (width: 1720, height: 41) for output: HDMI-A-1
+
+** (waybar:12197): WARNING **: 00:54:26.177: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-05-04 00:54:27.700] [info] Quitting.
+[2025-05-04 00:54:27.703] [info] Hyprland IPC stopping...
+[2025-05-04 01:12:31.664] [info] Using configuration file /home/peanut/.config/waybar/config.jsonc
+[2025-05-04 01:12:31.665] [info] Including resource file: ~/.config/waybar/modules.jsonc
+[2025-05-04 01:12:31.666] [info] Discovered appearance 'dark'
+[2025-05-04 01:12:31.666] [info] Using CSS file /home/peanut/.config/waybar/style.css
+[2025-05-04 01:12:31.669] [info] Hyprland IPC starting
+[2025-05-04 01:12:31.671] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-04 01:12:31.791] [info] Bar configured (width: 1720, height: 41) for output: HDMI-A-1
+
+** (waybar:23601): WARNING **: 01:12:31.792: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-05-04 01:14:01.844] [info] Bar configured (width: 1720, height: 40) for output: HDMI-A-1
+
+** (waybar:23601): WARNING **: 01:25:37.096: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 01:26:17.630: Status Notifier Item with bus name ':1.1405' and object path '/org/ayatana/NotificationItem/com_dec05eba_gpu_screen_recorder' is already registered
+
+** (waybar:23601): WARNING **: 01:26:23.001: Status Notifier Item with bus name ':1.1405' and object path '/org/ayatana/NotificationItem/com_dec05eba_gpu_screen_recorder' is already registered
+
+** (waybar:23601): WARNING **: 01:26:40.249: Status Notifier Item with bus name ':1.1405' and object path '/org/ayatana/NotificationItem/com_dec05eba_gpu_screen_recorder' is already registered
+
+** (waybar:23601): WARNING **: 01:26:54.143: Status Notifier Item with bus name ':1.1405' and object path '/org/ayatana/NotificationItem/com_dec05eba_gpu_screen_recorder' is already registered
+
+** (waybar:23601): WARNING **: 01:26:57.320: Status Notifier Item with bus name ':1.1405' and object path '/org/ayatana/NotificationItem/com_dec05eba_gpu_screen_recorder' is already registered
+
+** (waybar:23601): WARNING **: 01:26:59.411: Status Notifier Item with bus name ':1.1405' and object path '/org/ayatana/NotificationItem/com_dec05eba_gpu_screen_recorder' is already registered
+
+** (waybar:23601): WARNING **: 01:27:03.056: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 01:27:15.419: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-05-04 01:27:32.289] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-04 01:27:32.290] [info] Loading persistent workspaces from Hyprland workspace rules
+
+** (waybar:23601): WARNING **: 01:27:54.704: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 01:27:54.844: Status Notifier Item with bus name ':1.1428' and object path '/org/ayatana/NotificationItem/steam' is already registered
+
+** (waybar:23601): WARNING **: 01:35:33.272: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 01:35:33.282: Status Notifier Item with bus name ':1.1428' and object path '/org/ayatana/NotificationItem/steam' is already registered
+
+** (waybar:23601): WARNING **: 01:35:35.270: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 01:35:35.289: Status Notifier Item with bus name ':1.1428' and object path '/org/ayatana/NotificationItem/steam' is already registered
+[2025-05-04 01:38:15.488] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-04 01:38:15.489] [info] Loading persistent workspaces from Hyprland workspace rules
+
+** (waybar:23601): WARNING **: 01:39:13.389: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 01:39:13.438: Status Notifier Item with bus name ':1.1428' and object path '/org/ayatana/NotificationItem/steam' is already registered
+
+** (waybar:23601): WARNING **: 01:40:35.364: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 01:40:35.375: Status Notifier Item with bus name ':1.1428' and object path '/org/ayatana/NotificationItem/steam' is already registered
+
+** (waybar:23601): WARNING **: 01:45:19.951: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 02:00:56.028: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 02:01:58.329: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+** (waybar:23601): WARNING **: 02:05:02.234: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-05-04 02:05:02.247] [error] Item 'proton-vpn-app': Could not find an icon named 'proton-vpn-sign' and no pixmap given.
+sh: line 1: activate: command not found
+[2025-05-04 02:18:22.361] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-04 02:18:22.363] [info] Loading persistent workspaces from Hyprland workspace rules
+
+** (waybar:23601): WARNING **: 02:28:20.530: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+(waybar:23601): Gtk-CRITICAL **: 02:28:20.553: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:28:20.553: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:28:20.553: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:28:20.553: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:28:20.553: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:28:20.553: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+** (waybar:23601): WARNING **: 02:31:34.970: Status Notifier Item with bus name ':1.12' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.048: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.048: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.049: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.049: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.050: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.050: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.051: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.051: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.051: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:23601): Gtk-CRITICAL **: 02:31:35.051: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2025-05-04 02:33:01.341] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-04 02:33:01.342] [info] Loading persistent workspaces from Hyprland workspace rules
+Gdk-Message: 02:39:26.070: Error reading events from display: Connection reset by peer

@@ -5,38 +5,71 @@
     "separate-outputs": false,
     "rewrite": {
       "^.*~$": "󰄛 Kitty",
-      "(.*) ": " Empty"
-    }
+      "(.*) ": " Empty",
+    },
   },
   "group/info": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "transition-left-to-right": false
+      "transition-left-to-right": true
     },
-    "modules": ["custom/arrow-right", "cpu", "memory"]
+    "modules": ["cpu", "temperature", "memory"],
   },
-  "custom/arrow-right": {
-    "format": "󰁙",
-    "tooltip": false
-  },
+
   "cpu": {
-    "format": "󰘚 {usage}󱉸"
+    "format": "󰘚 {usage}󱉸",
+    "interval": 1,
   },
+
+  "temperature": {
+    // "thermal-zone": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    "critical-threshold": 90,
+    "interval": 1,
+    "format-critical": " {temperatureC}°C",
+    "format": " {temperatureC}°C",
+  },
+
   "memory": {
-    "format": " {:2}󱉸"
+    "format": " {used}GB",
+    "interval": 2,
   },
   "disk": {
     "interval": 600,
     "format": "󰆼 {percentage_used}󱉸",
-    "path": "/"
+    "path": "/",
   },
   "custom/playerlabel": {
     "format": "<span>{}</span>",
     "return-type": "json",
     "max-length": 48,
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F"
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
   },
+
+  "cava": {
+        "cava_config": "/home/peanut/.config/cava/config",
+        "framerate": 60,
+        "bars": 12,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
+
+
+
   "hyprland/workspaces": {
     "format": "{icon}",
     "active-only": false,
@@ -52,20 +85,20 @@
       "7": "7",
       "8": "8",
       "9": "9",
-      "10": "10"
-    }
+      "10": "10",
+    },
   },
   "group/audio": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "transition-left-to-right": true
+      "transition-left-to-right": true,
     },
-    "modules": ["custom/audio-icon", "pulseaudio", "pulseaudio#microphone"]
+    "modules": ["custom/audio-icon", "pulseaudio", "pulseaudio#microphone"],
   },
   "custom/audio-icon": {
     "format": "󱄠",
-    "tooltip": false
+    "tooltip": false,
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -82,8 +115,8 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""]
-    }
+      "default": ["", "", ""],
+    },
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
@@ -92,15 +125,15 @@
     "on-click": "pamixer --default-source -t",
     "on-scroll-up": "pamixer --default-source -i 5",
     "on-scroll-down": "pamixer --default-source -d 5",
-    "scroll-step": 5
+    "scroll-step": 5,
   },
   "group/hub": {
     "orientation": "inherit",
-    "modules": ["clock", "tray", "custom/notifications"]
+    "modules": ["clock", "tray", "custom/notifications"],
   },
   "tray": {
     "show-passive-items": true,
-    "spacing": 10
+    "spacing": 10,
   },
   "clock": {
     "format": "{:%OI:%M}",
@@ -114,9 +147,9 @@
         "days": "<span color='#ecc6d9'><b>{}</b></span>",
         "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
-      }
-    }
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+      },
+    },
   },
   "custom/notifications": {
     "tooltip": false,
@@ -129,14 +162,13 @@
       "inhibited-notification": "󰂚",
       "inhibited-none": "󰂚",
       "dnd-inhibited-notification": "󰂛",
-      "dnd-inhibited-none": "󰂛"
+      "dnd-inhibited-none": "󰂛",
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
-    "escape": true
-  }
+    "escape": true,
+  },
 }
-

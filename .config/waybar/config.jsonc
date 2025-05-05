@@ -9,8 +9,8 @@
 
   "modules-left": [
     "hyprland/window",
-    "group/info",
-    "custom/playerlabel"
+    "custom/playerlabel",
+    "cava"
   ],
 
   "modules-center": [
@@ -18,9 +18,8 @@
   ],
 
   "modules-right": [
-    /*"pulseaudio", 
-    "pulseaudio#microphone",*/
     "group/audio",
+    "group/info",
     "group/hub"
   ],
 }
