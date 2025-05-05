@@ -1,18 +1,127 @@
-configuration{
-    modi: "run,drun,window";
-    icon-theme: "Oranchelo";
-    show-icons: true;
-    terminal: "alacritty";
-    drun-display-format: "{icon} {name}";
-    location: 0;
-    disable-history: false;
-    hide-scrollbar: true;
-    display-drun: "   Apps ";
-    display-run: "   Run ";
-    display-window: " 﩯  Window";
-    display-Network: " 󰤨  Network";
-    sidebar-mode: true;
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
+
+configuration {
+  drun-display-format: "{name}";
+  font: "Iosevka 14";
+  modi: "drun";
+  show-icons: true;
+  icon-theme: "la-capitaine";
 }
 
-@theme "catppuccin-mocha"
+window {
+  width: 800px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0, 0.1);
+  border: 2px;
+  border-color: @border-color;
+  children: [ "mainbox" ];
+}
 
+mainbox {
+  background-color: transparent;
+  orientation: horizontal;
+  children: [ "listbox" ];
+}
+
+listbox {
+  background-color: transparent;
+  spacing: 10px;
+  orientation: vertical;
+  children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+  text-color: rgba(255,255,255,1);
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0,0,0, 0.3);
+  border-radius: 10px;
+  children: [ "entry" ];
+}
+
+entry {
+  background-color: transparent;
+  text-color: white;
+  placeholder-color: inherit;
+}
+
+listview {
+  columns: 2;
+  lines: 5;
+  cycle: true;
+  scrollbar: false;
+  layout: vertical;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+element {
+  enabled: true;
+  padding: 8px;
+  margin: 2px;
+  text-color: inherit;
+  border-radius: 10px;
+}
+
+element.normal.normal {
+  background-color: rgba(0,0,0,0.3);
+  text-color: @foreground;
+}
+
+element.normal.urgent {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-color: @foreground;
+}
+
+element.normal.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-color: @foreground;
+}
+
+element.selected.normal {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-color: @foreground;
+}
+
+element.selected.urgent {
+  background-color: rgba(0,0,0, 0.3);
+  text-color: @foreground;
+}
+
+element.selected.active {
+  background-color: white;
+  text-color: @foreground;
+}
+
+element.alternate.normal {
+  background-color: rgba(0,0,0, 0.3);
+  text-color: @foreground;
+}
+
+element.alternate.urgent {
+  background-color: @element-background;
+  text-color: @foreground;
+}
+
+element.alternate.active {
+  background-color: @element-background;
+  text-color: @foreground;
+}
+
+element-icon {
+  background-color: transparent;
+  text-color: inherit;
+  size: 5ch;
+}
+
+element-text {
+  text-color: white;
+  background-color: transparent;
+  vertical-align: 0.5;
+}
+
+element-text selected.normal {
+  text-color: rgb(255,255,255);
+  background-color: transparent;
+}
