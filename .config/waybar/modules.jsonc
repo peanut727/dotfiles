@@ -1,6 +1,6 @@
 {
   "hyprland/window": {
-    "format": "󰣆 {title}",
+    "format": "󰣆 {initialClass}",
     "max-length": 80,
     "separate-outputs": false,
     "rewrite": {
@@ -94,11 +94,7 @@
       "transition-duration": 300,
       "transition-left-to-right": true,
     },
-    "modules": ["custom/audio-icon", "pulseaudio", "pulseaudio#microphone"],
-  },
-  "custom/audio-icon": {
-    "format": "󱄠",
-    "tooltip": false,
+    "modules": ["pulseaudio", "pulseaudio#microphone"],
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -155,14 +151,14 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "󱅫",
-      "none": "󰂚",
-      "dnd-notification": "󰂛",
-      "dnd-none": "󰂛",
+      "notification": "ﮖ",
+      "none": "ﮖ",
+      "dnd-notification": "ﮗ",
+      "dnd-none": "ﮗ",
       "inhibited-notification": "󰂚",
       "inhibited-none": "󰂚",
-      "dnd-inhibited-notification": "󰂛",
-      "dnd-inhibited-none": "󰂛",
+      "dnd-inhibited-notification": "T",
+      "dnd-inhibited-none": "TE"
     },
     "return-type": "json",
     "exec-if": "which swaync-client",

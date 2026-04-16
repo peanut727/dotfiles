@@ -1,0 +1,65 @@
+#
+# WINDOW RULES
+#
+
+layerrule = blur on, waybar
+layerrule = ignorezero, waybar
+layerrule = blurpopups, waybar
+
+
+## swaync
+layerrule = blur, swaync-control-center
+layerrule = ignorezero, swaync-control-center
+layerrule = animation popin 95%, swaync-control-center
+
+layerrule = blur, swaync-notification-window
+layerrule = ignorezero, swaync-notification-window
+layerrule = animation slide, swaync-notification-window
+
+## rofi
+
+layerrule = blur, rofi
+layerrule = ignorezero, rofi
+layerrule = animation popin 95%, rofi
+
+
+windowrulev2 = workspace 2, class:Thorium-browser
+windowrulev2 = workspace 3, class:vesktop
+windowrulev2 = float, class:file_progress
+windowrulev2 = workspace 4, class:gamescope
+windowrulev2 = float, class:confirm
+windowrulev2 = float, class:dialog
+windowrulev2 = float, class:download
+windowrulev2 = float, class:notification
+windowrulev2 = float, class:error
+windowrulev2 = float, class:splash
+windowrulev2 = float, class:confirmreset
+windowrulev2 = float, title:Open File
+windowrulev2 = float, title:branchdialog
+windowrulev2 = float, class:Lxappearance
+windowrulev2 = float, class:Rofi
+windowrulev2 = animation none, class:Rofi
+windowrulev2 = float, class:viewnior
+windowrulev2 = float, class:foh
+windowrulev2 = float, class:pavucontrol-qt
+windowrulev2 = float, class:pavucontrol
+windowrulev2 = float, class:file-roller
+windowrulev2 = fullscreen, class:wlogout
+windowrulev2 = float, title:wlogout
+windowrulev2 = fullscreen, title:wlogout
+windowrulev2 = idleinhibit focus, class:mpv
+windowrulev2 = idleinhibit fullscreen, class:firefox
+windowrulev2 = float, title:^(Media viewer)$
+windowrulev2 = float, title:^(Volume Control)$
+windowrulev2 = float, title:^(Picture-in-Picture)$
+windowrulev2 = size 800 600, title:^(Volume Control)$
+windowrulev2 = move 75 44%, title:^(Volume Control)$
+#windowrulev2 = opacity 0.1 override 0.85 override, title:^(kitty)$
+
+windowrulev2 = opacity 0.8, initialTitle:(Spotify Free)
+windowrulev2 = workspace 4, initialClass:(.*)(.exe)
+
+
+
+
+

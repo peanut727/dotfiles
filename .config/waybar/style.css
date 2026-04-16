@@ -3,23 +3,28 @@
 @define-color main-color @color13;
 
 * {
-  font: bold 15px "JetBrainsMono Nerd Font";
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', 'Symbols Nerd Font';
+  
+
   border: none;
   border-radius: 0px;
   box-shadow: none;
   text-shadow: none;
 }
 
-window#waybar {
-  background: alpha(@background, 0.3);
+window#waybar { 
+  /**background: alpha(@background, 0.1);*/
+  background: transparent;
   border-radius: 10px;
 }
 
 #window {
   padding: 2px 10px;
   margin: 4px 2px 4px 4px;
-  background: alpha(@background, 0.3);
-  border-radius: 10px;
+  background: alpha(@background, 0.5);
+  border-radius: 30px;
   color: lighter(@main-color);
 }
 
@@ -39,21 +44,22 @@ tooltip label {
 }
 
 #tray {
-    background: alpha(@background, 0.3);
+    background: alpha(@background, 0.5);
     color: lighter(@main-color);
     margin: 4px 2px 4px 2px;
-    border-radius: 10px;
+    border-radius: 30px;
     border: solid 0px #f4d9e1;
     padding: 0px 8px
 }
 
 #custom-playerlabel {
   background: transparent;
+  color: lighter(@main-color);
   margin-left: 10px;
   border-radius: 16px;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -68,9 +74,10 @@ tooltip label {
 }
 
 #workspaces {
-  margin: 4px 4px;
-  background: transparent;
-  border-radius: 10px;
+  padding: 2px 10px;
+  margin: 4px 2px 4px 4px;
+  background: alpha(@background, 0.5);
+  border-radius: 30px;
 }
 
 #workspaces button {
@@ -101,22 +108,20 @@ tooltip label {
 #bluetooth,
 #network,
 #pulseaudio {
+  margin: 4px;
   color: lighter(@main-color);
-  background: alpha(@background, 0.3);
-  border-radius: 10px 0px 0px 10px;
-  border-left: 0px;
-  border-right: 0px;
-  border: solid 0px #f4d9e1;
-  padding: 0px 8px;
-  margin: 4px 0px 4px 0px;
-  
 }
 
 #pulseaudio.microphone {
   color: lighter(@main-color);
-  border-radius: 0px 10px 10px 0px;
-  border-left: 0px;
-  border-right: 0px;
+  margin-left: 10px;
+}
+
+#audio {
+  background: alpha(@background, 0.5);
+  border-radius: 30px;
+  margin: 4px 0px 4px 0px;
+  padding: 0px 8px;
 }
 
 #pulseaudio.muted {
@@ -130,10 +135,7 @@ tooltip label {
   padding: 0px 3px 2px 0px;
 }
 
-#custom-audio-icon {
-  color: lighter(@main-color);
-  margin: 0px 4px;
-}
+
 
 #custom-weather,
 #custom-theme-switcher {
@@ -149,7 +151,7 @@ tooltip label {
   padding: 0px 8px;
   margin: 4px 0px 4px 0px;
   background: alpha(@background, 0);
-  border-radius: 0px;
+  border-radius: 30px;
   color: lighter(@main-color);
 }
 
@@ -157,18 +159,20 @@ tooltip label {
   color: #EE4b2b;
 }
 
+
+
 #info {
   padding: 0px 8px;
   margin: 4px 2px 4px 4px;
-  background: alpha(@background, 0.3);
-  border-radius: 10px;
+  background: alpha(@background, 0.5);
+  border-radius: 30px;
 }
 
 #clock {
   padding: 0px 8px;
   margin: 4px 2px 4px 2px;
-  background: alpha(@background, 0.3);
-  border-radius: 10px;
+  background: alpha(@background, 0.5);
+  border-radius: 30px;
   color: lighter(@main-color);
 }
 
@@ -183,9 +187,12 @@ tooltip label {
 }
 
 #custom-notifications {
-  background: alpha(@background, 0.3);
-  border-radius: 10px;
+  background: alpha(@background, 0.5);
+  border-radius: 30px;
   margin: 4px 2px 4px 2px;
   color: lighter(@main-color);
-  padding: 0px 8px;
+  padding: 0.8rem;
+  /*padding-left: 12px;*/
 }
+
+

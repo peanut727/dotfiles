@@ -112,3 +112,60 @@ sh: line 1: activate: command not found
 [2025-05-04 02:33:01.341] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
 [2025-05-04 02:33:01.342] [info] Loading persistent workspaces from Hyprland workspace rules
 Gdk-Message: 02:39:26.070: Error reading events from display: Connection reset by peer
+[2025-05-06 13:54:06.902] [info] Using configuration file /home/peanut/.config/waybar/config.jsonc
+[2025-05-06 13:54:06.902] [info] Including resource file: ~/.config/waybar/modules.jsonc
+[2025-05-06 13:54:06.903] [info] Discovered appearance 'dark'
+[2025-05-06 13:54:06.903] [info] Using CSS file /home/peanut/.config/waybar/style.css
+[2025-05-06 13:54:06.907] [info] Hyprland IPC starting
+[2025-05-06 13:54:06.909] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-06 13:54:07.036] [info] Bar configured (width: 1720, height: 40) for output: HDMI-A-1
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.043: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.043: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.044: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.044: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.044: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.044: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.044: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.044: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.045: gtk_widget_set_accel_path: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+
+(waybar:39273): Gtk-CRITICAL **: 13:54:07.045: gtk_widget_add_accelerator: assertion 'GTK_IS_ACCEL_GROUP (accel_group)' failed
+[2025-05-06 14:02:20.599] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-06 14:02:20.600] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-06 14:11:05.841] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-06 14:11:05.843] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-06 14:23:35.285] [warning] Failed to update properties: GDBus.Error:org.freedesktop.DBus.Error.NoReply: Remote peer disconnected
+[2025-05-06 14:26:59.497] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-06 14:26:59.498] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-06 14:59:30.867] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-06 14:59:30.895] [info] Loading persistent workspaces from Hyprland workspace rules
+sh: line 1: activate: command not found
+
+(waybar:39273): Gtk-WARNING **: 15:45:31.006: Failed to set text '<span>PC Support & Gaming Test - Nvidia RTX 4060 Tested in 9 Games in 2025 #rtx4060 #rtx4060gaming #shorts</span>' from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+
+(waybar:39273): Gtk-WARNING **: 15:45:31.007: Failed to set text '<span>PC Support & Gaming Test - Nvidia RTX 4060 Tested in 9 Games in 2025 #rtx4060 #rtx4060gaming #shorts</span>' from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+
+(waybar:39273): Gtk-WARNING **: 15:45:32.381: Failed to set text '<span>PC Support & Gaming Test - </span>' from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+
+(waybar:39273): Gtk-WARNING **: 15:48:35.509: Failed to set text '<span>PC Support & Gaming Test - Nvidia RTX 4060 Tested in 9 Games in 2025 #rtx4060 #rtx4060gaming #shorts</span>' from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+
+(waybar:39273): Gtk-WARNING **: 15:48:35.509: Failed to set text '<span>PC Support & Gaming Test - Nvidia RTX 4060 Tested in 9 Games in 2025 #rtx4060 #rtx4060gaming #shorts</span>' from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+
+(waybar:39273): Gtk-WARNING **: 15:48:35.509: Failed to set text '<span>PC Support & Gaming Test - Nvidia RTX 4060 Tested in 9 Games in 2025 #rtx4060 #rtx4060gaming #shorts</span>' from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+
+(waybar:39273): Gtk-WARNING **: 15:48:36.594: Failed to set text '<span>PC Support & Gaming Test - Nvidia RTX 4060 Tested in 9 Games in 2025 #rtx4060 #rtx4060gaming #shorts</span>' from markup due to error parsing markup: Error on line 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;
+sh: line 1: activate: command not found
+[2025-05-06 16:40:41.426] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-06 16:40:41.458] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-06 17:09:30.111] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-06 17:09:30.150] [info] Loading persistent workspaces from Hyprland workspace rules
+Gdk-Message: 17:10:23.399: Error reading events from display: Broken pipe
